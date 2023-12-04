@@ -1,0 +1,24 @@
+#!/bin/bash
+# Helper script to run PhD ABM using parallel processing.
+
+# setup
+start=$1 # experiment to start, default: 1
+end=$2  # experiment to end, default: 121
+source venv/bin/activate && pip install -e '.' # (re-)install PhD ABM
+
+# check input
+if [[ $1 == ?(-)+([0-9]) && $2 == ?(-)+([0-9]) ]]; then
+	echo "Running experiment $1 to $2 using parallel computing"
+else
+	echo "Error running in parallel: please specify two parameters to script, indicating experiment to start and end."
+	exit 1
+fi
+
+# run
+time parallel --link python3 -m 'abm' ::: $(seq $start $end) ::: $(seq $start $end)
+echo 'PhD ABM run completed'
+
+# cleanup
+pip uninstall -y abm
+
+exit 0
