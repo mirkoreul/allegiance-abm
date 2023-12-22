@@ -1,11 +1,12 @@
 # Overview
-Reproduce results for the paper: `How Loyalty Trials Shape Allegiance to Political Order`.
+Reproduce results for the paper: 
+[`How Loyalty Trials Shape Allegiance to Political Order`](https://doi.org/10.1177/00220027231222004).
 
 # Reproduce Results
 ## Linux
 Execute the following steps in a terminal:
-1. Clone this repository: `git clone ...`
-2. Navigate to the cloned repository: `cd ~/ABM`
+1. Clone this repository: `git clone https://github.com/mirkoreul/allegiance-abm.git ABM`
+2. Navigate to the cloned repository: `cd ./ABM`
 3. Setup and enter a Python virtual environment: 
    - `python3 -m venv venv`
    - `source ./venv/bin/activate`
@@ -34,7 +35,13 @@ By default all results given in the paper are reproduced, excluding the online a
 
 # Citation
 ```
-Reul, Mirko; Bhavnani, Ravi. 2023. 
-``How Loyalty Trials Shape Allegiance to Political Order.''
-Journal of Conflict Resolution (Forthcoming). 
+@article{Reul2023,
+	title = {How {Loyalty} {Trials} {Shape} {Allegiance} to {Political} {Order}},
+	volume = {0},
+	doi = {10.1177/00220027231222004},
+	number = {0},
+	journal = {Journal of Conflict Resolution},
+	author = {Reul, Mirko and Bhavnani, Ravi},
+	year = {2023},
+}
 ```
