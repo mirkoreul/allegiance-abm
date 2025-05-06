@@ -36,12 +36,14 @@ By default all results given in the paper are reproduced, excluding the online a
 # Citation
 ```
 @article{Reul2023,
-	title = {How {Loyalty} {Trials} {Shape} {Allegiance} to {Political} {Order}},
-	volume = {0},
-	doi = {10.1177/00220027231222004},
-	number = {0},
-	journal = {Journal of Conflict Resolution},
-	author = {Reul, Mirko and Bhavnani, Ravi},
-	year = {2023},
+  title = {How {{Loyalty Trials Shape Allegiance}} to {{Political Order}}},
+  author = {Reul, Mirko and Bhavnani, Ravi},
+  year = {2023},
+  journal = {Journal of Conflict Resolution},
+  volume = {69},
+  number = {1},
+  pages = {178--206},
+  doi = {10.1177/00220027231222004},
 }
 ```
+
